@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4196a724-3011-4b54-b0d8-9906c92d4c0d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49701/SampleDataService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SampleDataService.disco" MetadataType="Disco" ID="4d50f833-c0cd-4239-83f5-b6ed49ca56de" SourceId="1" SourceUrl="http://localhost:49701/SampleDataService.svc?disco" />
+    <MetadataFile FileName="SampleDataService.wsdl" MetadataType="Wsdl" ID="b27d6ef1-9f7f-4dba-95be-0c7295b60f69" SourceId="1" SourceUrl="http://localhost:49701/SampleDataService.svc?wsdl" />
+    <MetadataFile FileName="SampleDataService.xsd" MetadataType="Schema" ID="aad56b95-3e25-40b8-862a-b35495a20266" SourceId="1" SourceUrl="http://localhost:49701/SampleDataService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SampleDataService1.xsd" MetadataType="Schema" ID="9e495f11-9664-4878-9dd6-3933ec79988e" SourceId="1" SourceUrl="http://localhost:49701/SampleDataService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SampleDataService2.xsd" MetadataType="Schema" ID="558914df-0a96-4ff6-af0f-85aa0515afe7" SourceId="1" SourceUrl="http://localhost:49701/SampleDataService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

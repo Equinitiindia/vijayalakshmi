@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService1.Business" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService1.Business" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49701/SampleDataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfSampleData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SampleData" nillable="true" type="tns:SampleData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSampleData" nillable="true" type="tns:ArrayOfSampleData" />
+  <xs:complexType name="SampleData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:double" />
+      <xs:element minOccurs="0" name="ApplicationId" type="xs:int" />
+      <xs:element minOccurs="0" name="ClearedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsCleared" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PostingDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Summary" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SampleData" nillable="true" type="tns:SampleData" />
+</xs:schema>
